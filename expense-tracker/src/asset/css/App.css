@@ -17,6 +17,7 @@
   flex: 1;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .leftcontainer img{
@@ -25,10 +26,19 @@
   border-radius: 12px;
 }
 
+.leftcontainer p{
+  margin-bottom: 20px;
+  font-size: 24px;
+ font-weight: bold;
+
+}
+
 .rightcontainer {
-  background-image: linear-gradient(red, yellow);
+  background-image: linear-gradient(white, green);
   display: flex;
   flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .header{
@@ -46,4 +56,31 @@ border-bottom:1px solid gray;
   width: 4%;
   height: 4%;
   margin-right: 12px;
+}
+
+.formcard{
+background-color: aliceblue;
+width: 60%;
+height:60% ;
+border-radius: 12px;
+box-shadow: 4px 4px 24px 0px black ;
+padding: 14px;
+
+}
+
+.formcard div{
+display: flex;
+flex-direction: column;
+margin-bottom: 15px;
+}
+
+.formcard input{
+margin-top: 5px;
+width: 100%;
+height:27px;
+
+}
+
+.formcard label{
+
 }
