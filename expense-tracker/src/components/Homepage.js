@@ -1,7 +1,12 @@
 import React from 'react'
 import img1 from '../asset/img/WhatsApp Image 2025-01-25 at 21.14.44_2abff19d.jpg'
-
+import { Link, useNavigate} from 'react-router-dom'
 function Homepage() {
+ const navigate = useNavigate();
+  const dologin = ()=>{
+console.log("Clicked");
+navigate("/dashboard");
+  }
   return (
     <div className='container'>
       <div className='leftcontainer'>
@@ -14,64 +19,34 @@ function Homepage() {
       <div className='rightcontainer'>
         <div className='formcard'>
           <div>
-            <h2 style={{alignSelf:'center'}}>Register</h2>
+            <h2 style={{ alignSelf: "center" }}>Login</h2></div>
+          <div>
+            <label>E-mail</label>
+            <input
+              required
+              type="e-mail"
+              placeholder='Enter your E-mail' />
+          </div>
+          <div>
+            <label>Password</label>
+            <input
+              required
+              type="password"
+              placeholder='Enter your Password' />
+          </div>
+
+          <div>
+            <button onClick={dologin}>Login   
+            </button>
             </div>
-          
-          <div>
-            <label>
-              Name
-            </label>
-            <input
-              required
-              type="text"
-              placeholder='Enter your name'
-            />
+            <div>
+                <span style={{ alignSelf: 'center' }}>not a user ?<Link to="/register">Register</Link> </span>
+              </div>
           </div>
-
-          <div>
-            <label>
-              Email
-            </label>
-            <input
-              required
-              type="email"
-              placeholder='Enter your email'
-            />
-          </div>
-
-          <div>
-            <label>
-              Password
-            </label>
-            <input
-              required
-              type="password"
-              placeholder='Enter your password'
-            />
-          </div>
-
-          <div>
-            <label>
-              Confirm Password
-            </label>
-            <input
-              required
-              type="password"
-              placeholder='Enter your confirm password'
-            />
-          </div>
-
-
-          <div>
-            <button>Submit</button>
-          </div>
-
-
         </div>
 
       </div>
-    </div>
-  )
+      )
 }
 
-export default Homepage
+      export default Homepage

@@ -1,0 +1,10 @@
+.mainContainer{
+    background-image: linear-gradient(white, green);
+    display: flex;
+    align-content: center;
+    align-items: center;
+  justify-content: center;
+    justify-items: center;
+    padding-top: 50px;
+   
+  }
