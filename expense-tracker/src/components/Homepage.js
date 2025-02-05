@@ -46,7 +46,7 @@ else{
               type="email"
               placeholder='Enter your Email'
               value={inputs.email||''}
-              onchange={handlechange}
+              onChange={handlechange}
               name='email'
                />
          
@@ -58,8 +58,9 @@ else{
               type="password"
               placeholder='Enter your Password'
               value={inputs.pass || ''}
-              onchange={handlechange}
+              onChange={handlechange}
               name='pass'
+              
                />
              
           </div>

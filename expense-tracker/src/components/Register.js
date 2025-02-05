@@ -19,6 +19,7 @@ function Register() {
   navigate("/dashboard");
  
     }
+    
   return ( 
     <div className='mainContainer'>
 
@@ -37,7 +38,7 @@ function Register() {
         type="text"
         placeholder='Enter your name'
         value={input.name||''}
-        onchange={handlechange}
+        onChange={handlechange}
         name='name'
       />
     </div>
@@ -51,7 +52,7 @@ function Register() {
         type="email"
         placeholder='Enter your email'
         value={input.email||''}
-        onchange={handlechange}
+        onChange={handlechange}
         name='email'
       />
     </div>
@@ -65,7 +66,7 @@ function Register() {
         type="password"
         placeholder='Enter your password'
         value={input.pass||''}
-        onchange={handlechange}
+        onChange={handlechange}
         name='pass'
       />
     </div>
@@ -79,7 +80,7 @@ function Register() {
         type="password"
         placeholder='Enter your confirm password'
         value={input.cnfpass||''}
-        onchange={handlechange}
+        onChange={handlechange}
         name='cnfpass'
       />
     </div>
