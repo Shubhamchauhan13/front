@@ -28,7 +28,7 @@ function Register() {
       <h2 style={{alignSelf:'center'}}>Register</h2>
       </div>
     
-    <form onsubmit={doregister}>
+    <form onSubmit={doregister}>
     <div>
       <label>
         Name

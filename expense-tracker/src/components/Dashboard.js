@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import img1 from '../asset/img/dashboard.jpg'
+import del from '../asset/img/delete.jpg'
+import edit from '../asset/img/edit.jpg'
 import { Link, useNavigate } from 'react-router-dom'
 function Dashboard() {
   const myexpenses = [100,200,300,600,700,800]
@@ -27,14 +29,20 @@ function Dashboard() {
       {showdata ?
         <div className='leftcontainer'>
           <p>Total expenses : 1000</p>
+          <div style={{width:'100%',overflowY:'scroll',marginBottom:'50px',justifyItems:'center',padding:'20px'}}>
           {myexpenses.map((val) => 
           <div className='expensecard'>
+            <div style={{width:'100px',display:'flex',flexDirection:'row',justifyContent:'flex-end'}}>
+            <img style={{width:'20px',heigth:'20px'}} src={del} />
+            <img style={{width:'20px',heigth:'20px',marginLeft:'4px'}} src={edit} />
+            </div>
             <p>Title</p>
             <p>Amount {val}</p>
             <p>Date</p>
             <p>Type</p>
              </div>
             )}
+            </div>
           </div>
           :
       <div className='leftcontainer'>

@@ -38,7 +38,7 @@ else{
           <div>
             <h2 style={{ alignSelf: "center" }}>Login</h2></div>
 
-            <form onsubmit={dologin}>
+            <form onSubmit={dologin}>
           <div>
             <label>Email</label>
             <input
