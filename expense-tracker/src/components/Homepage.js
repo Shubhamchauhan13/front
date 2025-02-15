@@ -74,10 +74,14 @@ else{
           <div>
             <button>Login</button>
             </div>
-            <div>
+           
+              </form>
+              <div>
+                        <button onClick={() => { alert("Email Sent") }} style={{ backgroundColor: 'white', color: 'black', border: '2px solid black' }}>Forgot Password</button>
+                    </div>
+              <div>
                 <span style={{ alignSelf: 'center' }}>not a user ?<Link to="/register">Register</Link> </span>
               </div>
-              </form>
           </div>
         </div>
 

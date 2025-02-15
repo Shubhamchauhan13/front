@@ -98,7 +98,15 @@ height:30px;
 border-radius: 10px;
 border: 1px solid black;
 padding-left: 8px;
+box-sizing: border-box;
+
 }
+
+
+.formcard input::placeholder {
+  color: red;
+}
+
 
 .formcard label{
 margin-bottom: 4px;
@@ -112,7 +120,13 @@ font-weight: 900;
   border: none;
   background-color: black;
   color: aliceblue;
+  font-weight: bold;
+
 }
+
+.formcard button:hover {
+  background-color: red;}
+
 
 .expensecard{
   background-color: white;
@@ -123,8 +137,13 @@ font-weight: 900;
   
 }
 
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: darkseagreen;
+}
 
-.dropdown {
+
+
+/*.dropdown {
   float: left;
   overflow: hidden;
 }
@@ -138,11 +157,9 @@ font-weight: 900;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-}
+}*/
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: lightgray;
-}
+
 
 .dropdown-content {
   display: none;
@@ -151,9 +168,10 @@ font-weight: 900;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  right: 0;
 }
 
-.dropdown-content a {
+.dropdown-content p {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -162,10 +180,73 @@ font-weight: 900;
   text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdown-content p:hover {
   background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  justify-items: center;
+}
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  justify-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-content button {
+  height: 20px;
+  border-radius: 4px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  width: 80px;
+  margin-right: 10px;
 }
